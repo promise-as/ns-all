@@ -40,7 +40,7 @@ $txt-color: #237ce2;
   -webkit-line-clamp: $row;
   -webkit-box-orient: vertical;
 }
-i{
+i {
   @extend %in-b;
   font-style: normal;
   vertical-align: middle;
@@ -81,7 +81,7 @@ select {
     font-size: inherit;
   }
 }
-body{
+body {
   font-size: 14px;
 }
 .wrap {
@@ -127,12 +127,12 @@ body{
       .icon-kc {
         width: 16px;
         height: 13px;
-        background: url('../images/sprites-pc.png') -340px -324px;
+        background: url("../images/sprites-pc.png") -340px -324px;
       }
       .icon-program {
         width: 16px;
         height: 16px;
-        background: url('../images/sprites-pc.png') -285px -253px;
+        background: url("../images/sprites-pc.png") -285px -253px;
         margin-left: 10px;
       }
     }
@@ -184,10 +184,10 @@ body{
     .detail-title {
       font-weight: bold;
       margin-bottom: 10px;
-      .icon{
+      .icon {
         width: 8px;
         height: 9px;
-        background: url('../images/sprites-pc.png') -446px -102px;
+        background: url("../images/sprites-pc.png") -446px -102px;
         margin-right: 10px;
       }
     }
@@ -229,12 +229,12 @@ body{
       font-weight: bold;
       line-height: 30px;
       margin-right: 20px;
-      .icon{
+      .icon {
         width: 16px;
         height: 16px;
-        background: url('../images/sprites-pc.png') -266px -324px;
+        background: url("../images/sprites-pc.png") -266px -324px;
         margin-right: 10px;
-      }      
+      }
     }
   }
 }
@@ -244,13 +244,13 @@ body{
   .icon-avatar {
     width: 14px;
     height: 16px;
-    background: url('../images/sprites-pc.png') -10px -409px;
+    background: url("../images/sprites-pc.png") -10px -409px;
     margin-right: 10px;
   }
   a {
     &:hover {
       .icon-avatar {
-        background: url('../images/sprites-pc.png') -44px -409px;
+        background: url("../images/sprites-pc.png") -44px -409px;
       }
     }
     &:last-child {
@@ -296,7 +296,7 @@ body{
       .sel-icon {
         width: 9px;
         height: 5px;
-        background: url('../images/sprites-pc.png') -446px -213px;
+        background: url("../images/sprites-pc.png") -446px -213px;
         position: absolute;
         left: 59px;
         top: 19px;
@@ -338,7 +338,7 @@ body{
     .submit-icon {
       width: 16px;
       height: 17px;
-      background: url('../images/sprites-pc.png') -405px -138px;
+      background: url("../images/sprites-pc.png") -405px -138px;
       position: absolute;
       right: 60px;
       top: 0;
@@ -355,16 +355,16 @@ body{
       .head-icon {
         width: 16px;
         height: 16px;
-        background: url('../images/sprites-pc.png') -405px -213px;
+        background: url("../images/sprites-pc.png") -405px -213px;
       }
       &:nth-of-type(2) {
         .head-icon {
-          background: url('../images/sprites-pc.png') -405px -249px;
+          background: url("../images/sprites-pc.png") -405px -249px;
         }
       }
       &:nth-of-type(3) {
         .head-icon {
-          background: url('../images/sprites-pc.png') -405px -285px;
+          background: url("../images/sprites-pc.png") -405px -285px;
         }
       }
     }
@@ -522,24 +522,24 @@ body{
           color: $txt-color;
         }
       }
-      .icon{
+      .icon {
         width: 64px;
         height: 70px;
-        background: url('../images/sprites-pc.png') -111px -10px;
+        background: url("../images/sprites-pc.png") -111px -10px;
       }
-      &:nth-of-type(2){
-        .icon{
-          background: url('../images/sprites-pc.png') -195px -10px;
+      &:nth-of-type(2) {
+        .icon {
+          background: url("../images/sprites-pc.png") -195px -10px;
         }
       }
-      &:nth-of-type(3){
-        .icon{
-          background: url('../images/sprites-pc.png') -10px -111px;
+      &:nth-of-type(3) {
+        .icon {
+          background: url("../images/sprites-pc.png") -10px -111px;
         }
       }
-      &:nth-of-type(4){
-        .icon{
-          background: url('../images/sprites-pc.png') -94px -111px;
+      &:nth-of-type(4) {
+        .icon {
+          background: url("../images/sprites-pc.png") -94px -111px;
         }
       }
       span {
@@ -568,7 +568,7 @@ body{
         @extend %in-b;
         width: 26px;
         height: 22px;
-        background: url('../images/sprites-pc.png') -356px -272px;
+        background: url("../images/sprites-pc.png") -356px -272px;
         margin-right: 10px;
       }
       span {
@@ -578,35 +578,35 @@ body{
         .icon {
           width: 24px;
           height: 24px;
-          background: url('../images/sprites-pc.png') -356px -52px;
+          background: url("../images/sprites-pc.png") -356px -52px;
         }
       }
       &:nth-of-type(3) {
         .icon {
           width: 24px;
           height: 20px;
-          background: url('../images/sprites-pc.png') -186px -324px;
+          background: url("../images/sprites-pc.png") -186px -324px;
         }
       }
       &:nth-of-type(4) {
         .icon {
           width: 24px;
           height: 24px;
-          background: url('../images/sprites-pc.png') -356px -96px;
+          background: url("../images/sprites-pc.png") -356px -96px;
         }
       }
       &:nth-of-type(5) {
         .icon {
           width: 24px;
           height: 24px;
-          background: url('../images/sprites-pc.png') -356px -140px;
+          background: url("../images/sprites-pc.png") -356px -140px;
         }
       }
       &:nth-of-type(6) {
         .icon {
           width: 24px;
           height: 22px;
-          background: url('../images/sprites-pc.png') -54px -324px;
+          background: url("../images/sprites-pc.png") -54px -324px;
         }
       }
     }
@@ -777,10 +777,10 @@ body{
               padding-left: 27px;
               background: url(../images/ns-zs-icon_1.png) no-repeat left;
               margin-bottom: 10px;
-              .icon{
+              .icon {
                 width: 16px;
                 height: 12px;
-                background: url('../images/sprites-pc.png') -190px -367px;
+                background: url("../images/sprites-pc.png") -190px -367px;
                 margin-right: 6px;
               }
             }
@@ -888,7 +888,7 @@ body{
         width: 83px;
         height: 28px;
         line-height: 28px;
-        background: url('../images/sprites-pc.png') -138px -201px;
+        background: url("../images/sprites-pc.png") -138px -201px;
         font-size: 16px;
         font-weight: bold;
         padding-left: 10px;
@@ -951,7 +951,7 @@ body{
           .icon {
             width: 5px;
             height: 10px;
-            background: url('../images/sprites-pc.png') -446px -158px;
+            background: url("../images/sprites-pc.png") -446px -158px;
             margin-right: 8px;
           }
           em {
@@ -979,12 +979,12 @@ body{
           .icon {
             width: 12px;
             height: 12px;
-            background: url('../images/sprites-pc.png') -355px -367px;
+            background: url("../images/sprites-pc.png") -355px -367px;
             margin-right: 10px;
           }
           .sel {
             .icon {
-              background: url('../images/sprites-pc.png') -387px -367px;
+              background: url("../images/sprites-pc.png") -387px -367px;
             }
           }
         }
@@ -1040,14 +1040,14 @@ body{
           .bz-r {
             width: 81px;
             height: 81px;
-            background: url('../images/sprites-pc.png') -10px -10px;
+            background: url("../images/sprites-pc.png") -10px -10px;
           }
         }
         .row-fit {
           .icon {
             width: 10px;
             height: 7px;
-            background: url('../images/sprites-pc.png') -446px -131px;
+            background: url("../images/sprites-pc.png") -446px -131px;
           }
           em {
             @extend %in-b;
@@ -1241,7 +1241,7 @@ body{
         .icon {
           width: 13px;
           height: 13px;
-          background: url('../images/sprites-pc.png') -78px -409px;
+          background: url("../images/sprites-pc.png") -78px -409px;
           margin-right: 8px;
         }
         span {
@@ -1250,7 +1250,7 @@ body{
         li {
           &.cur {
             .icon {
-              background: url('../images/sprites-pc.png') -111px -409px;
+              background: url("../images/sprites-pc.png") -111px -409px;
             }
           }
         }
@@ -1258,14 +1258,14 @@ body{
       .l-checkbox {
         margin-bottom: 30px;
         li {
-          .icon{
+          .icon {
             width: 14px;
             height: 14px;
-            background: url('../images/sprites-pc.png') -122px -367px;
+            background: url("../images/sprites-pc.png") -122px -367px;
           }
           &.active {
-            .icon{
-              background: url('../images/sprites-pc.png') -156px -367px;
+            .icon {
+              background: url("../images/sprites-pc.png") -156px -367px;
             }
           }
         }
@@ -1588,7 +1588,7 @@ body{
           .icon {
             width: 32px;
             height: 32px;
-            background: url('../images/sprites-pc.png') -76px -253px;
+            background: url("../images/sprites-pc.png") -76px -253px;
             margin-right: 10px;
           }
         }
@@ -1603,13 +1603,13 @@ body{
           }
         }
         .icon-wx {
-          background: url('../images/sprites-pc.png') -279px -86px;
+          background: url("../images/sprites-pc.png") -279px -86px;
         }
         .icon-zfb {
-          background: url('../images/sprites-pc.png') -279px -157px;
+          background: url("../images/sprites-pc.png") -279px -157px;
         }
         .icon-jd {
-          background: url('../images/sprites-pc.png') -10px -253px;
+          background: url("../images/sprites-pc.png") -10px -253px;
         }
         p {
           width: 288px;
@@ -1643,12 +1643,12 @@ body{
         .icon {
           width: 9px;
           height: 5px;
-          background: url('../images/sprites-pc.png') -446px -238px;
+          background: url("../images/sprites-pc.png") -446px -238px;
           margin-left: 10px;
         }
         &:hover {
           .icon {
-            background: url('../images/sprites-pc.png') -446px -263px;
+            background: url("../images/sprites-pc.png") -446px -263px;
           }
           .navbar-menu {
             display: block;
@@ -1690,10 +1690,10 @@ body{
   color: #888;
   @extend %one;
   vertical-align: middle;
-  .icon{
+  .icon {
     width: 12px;
     height: 11px;
-    background: url('../images/sprites-pc.png') -446px -10px;
+    background: url("../images/sprites-pc.png") -446px -10px;
   }
   a {
     color: #333333;
@@ -1986,7 +1986,7 @@ body{
       color: #ffffff;
       height: 32px;
       line-height: 32px;
-      background: url("../images/css_sprites.png") -10px -111px;
+      background: url("../images/sprites-pc.png") -10px -201px;
       font-weight: bold;
       margin-bottom: 20px;
     }
@@ -2074,6 +2074,7 @@ body{
     border: solid 1px #e4e4e4;
     padding: 30px 60px 40px;
     box-sizing: border-box;
+    margin-bottom: 20px;
     .cont-title {
       font-size: 16px;
       line-height: 36px;
@@ -2097,9 +2098,9 @@ body{
       color: #666666;
       padding-left: 36px;
       cursor: pointer;
-      background: url(../images/nz-sz-icon_2.png) no-repeat left;
+      background: url(../images/zt.png) no-repeat left;
       &.sel {
-        background: url(../images/nz-sz-icon_3.png) no-repeat left;
+        background: url(../images/zt-sel.png) no-repeat left;
       }
     }
     .sign-in {
@@ -2131,12 +2132,9 @@ body{
         padding-top: 20px;
         vertical-align: middle;
         .icon {
-          @extend %in-b;
           width: 16px;
           height: 16px;
-          background: url("../images/css_sprites.png") -10px -326px;
-          margin-right: 6px;
-          vertical-align: middle;
+          background: url('../images/sprites-pc.png') -230px -324px;
         }
         .error {
           color: #ef544c;
@@ -2227,7 +2225,7 @@ body{
       @extend %in-b;
       width: 21px;
       height: 24px;
-      background: url("../images/css_sprites.png") -331px -95px;
+      background: url('../images/sprites-pc.png') -405px -10px;
       margin-right: 10px;
       vertical-align: middle;
     }
@@ -2347,12 +2345,17 @@ body{
       line-height: 30px;
       color: #333333;
       span {
-        padding-left: 24px;
-        background: url(../images/nz-sz-icon_2.png) no-repeat left;
         cursor: pointer;
         margin-right: 20px;
+        .icon{
+          width: 14px;
+          height: 14px;
+          background: url('../images/sprites-pc.png') -122px -367px;
+        }
         &.sel {
-          background: url(../images/nz-sz-icon_3.png) no-repeat left;
+          .icon{
+            background: url('../images/sprites-pc.png') -156px -367px;
+          }
         }
       }
     }
@@ -2361,12 +2364,9 @@ body{
       line-height: 30px;
       color: #333333;
       .icon {
-        @extend %in-b;
         width: 13px;
         height: 13px;
-        background: url("../images/css_sprites.png") -375px -152px;
-        vertical-align: middle;
-        margin-right: 8px;
+        background: url('../images/sprites-pc.png') -78px -409px;
       }
       span {
         vertical-align: middle;
@@ -2374,7 +2374,7 @@ body{
         margin-right: 20px;
         &.sel {
           .icon {
-            background: url("../images/css_sprites.png") -375px -185px;
+            background: url('../images/sprites-pc.png') -111px -409px;
           }
         }
       }
@@ -2547,7 +2547,7 @@ body{
     padding-top: 20px;
     li {
       float: left;
-      background: url(../images/2.png) no-repeat center;
+      background: url(../images/icon_18.png) no-repeat right bottom;
       width: 238px;
       height: 150px;
       padding: 20px 10px 20px 20px;
@@ -2560,15 +2560,7 @@ body{
         font-weight: normal;
         color: #333;
         @extend %clearfix;
-        i {
-          float: left;
-          width: 24px;
-          height: 21px;
-          margin-right: 10px;
-          background: url(../images/3.png) no-repeat;
-        }
         a {
-          float: left;
           width: 165px;
           @extend %one;
         }
@@ -2649,7 +2641,7 @@ body{
   }
 }
 /* 答题弹窗 */
-.ns-tc{
+.ns-tc {
   width: 500px;
   height: 399px;
   padding: 16px 20px 20px;
@@ -2663,7 +2655,7 @@ body{
   margin: auto;
   z-index: 20;
   display: none;
-  .ns-tc-close{
+  .ns-tc-close {
     width: 14px;
     height: 14px;
     position: absolute;
@@ -2671,72 +2663,70 @@ body{
     right: 8px;
     cursor: pointer;
   }
-  .ns-tc-title{
+  .ns-tc-title {
     text-align: center;
     color: #ffffff;
     margin-bottom: 10px;
-    .tc-title1{
+    .tc-title1 {
       font-size: 24px;
     }
-    .tc-title2{
+    .tc-title2 {
       font-size: 36px;
       font-weight: bold;
     }
-    em{
+    em {
       color: #fed101;
       font-weight: bold;
     }
   }
-  .tc-form{
+  .tc-form {
     padding: 30px 30px 18px;
     box-sizing: border-box;
     background-color: #ffffff;
     border-radius: 6px;
     font-size: 16px;
-    label{
+    label {
       display: block;
       height: 42px;
       line-height: 42px;
       margin-bottom: 20px;
-      span{
+      span {
         @extend %in-b;
         width: 92px;
         text-align: right;
       }
-      input{
+      input {
         border: solid 1px #e4e4e4;
         width: 300px;
         height: 40px;
       }
     }
-    input[type='submit']{
+    input[type="submit"] {
       border: none;
       @extend %in-b;
       width: 399px;
       height: 48px;
       line-height: 48px;
-      background-image: linear-gradient(135deg, 
-        #23cee2 0%, 
-        #237ce2 100%), 
-      linear-gradient(
-        #237ce2, 
-        #237ce2);
-      background-blend-mode: normal, 
-        normal;
-      box-shadow: 0px 3px 5px 0px 
-        rgba(35, 124, 226, 0.4);
+      background-image: linear-gradient(135deg, #23cee2 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2);
+      background-blend-mode: normal, normal;
+      box-shadow: 0px 3px 5px 0px rgba(35, 124, 226, 0.4);
       border-radius: 24px;
       margin-bottom: 20px;
       color: #ffffff;
       cursor: pointer;
     }
-    .tc-hint{
+    .tc-hint {
       font-size: 14px;
       line-height: 36px;
       color: #c6c6c6;
       text-align: center;
     }
   }
+}
+.icon-zt{
+  width: 24px;
+  height: 24px;
+  background: url('../images/sprites-pc.png') -356px -228px;
 }
 
 /* qlp */
@@ -2746,36 +2736,36 @@ body{
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.icon-cs{
+.icon-cs {
   width: 12px;
   height: 12px;
-  background: url('../images/sprites-pc.png') -259px -367px;
+  background: url("../images/sprites-pc.png") -259px -367px;
   margin-right: 6px;
 }
-.icon-ks{
+.icon-ks {
   width: 12px;
   height: 12px;
-  background: url('../images/sprites-pc.png') -291px -367px;
+  background: url("../images/sprites-pc.png") -291px -367px;
   margin-right: 6px;
 }
-.icon-w{
+.icon-w {
   width: 24px;
   height: 21px;
-  background: url('../images/sprites-pc.png') -142px -324px;
+  background: url("../images/sprites-pc.png") -142px -324px;
   margin-right: 10px;
 }
-.icon-d{
+.icon-d {
   width: 24px;
   height: 21px;
-  background: url('../images/sprites-pc.png') -98px -324px;
+  background: url("../images/sprites-pc.png") -98px -324px;
   margin-right: 10px;
 }
-.icon-sp{
+.icon-sp {
   width: 12px;
   height: 11px;
-  background: url('../images/sprites-pc.png') -446px -41px;
+  background: url("../images/sprites-pc.png") -446px -41px;
 }
-.box1 {
+.ns-box1 {
   .box1-t {
     margin-bottom: 30px;
     .title {
@@ -2863,7 +2853,7 @@ body{
             color: #888888;
             display: inline-block;
             vertical-align: middle;
-            &.p1{
+            &.p1 {
               padding-right: 10px;
             }
           }
@@ -2987,10 +2977,10 @@ body{
               font-size: 14px;
               font-weight: normal;
               color: #333;
-              a{
+              a {
                 @extend %in-b;
                 width: 100%;
-                &::after{
+                &::after {
                   display: none;
                 }
               }
@@ -3015,7 +3005,7 @@ body{
     }
   }
 }
-.box2 {
+.ns-box2 {
   padding-top: 30px;
   .fl {
     width: 840px;
@@ -3154,11 +3144,11 @@ body{
               color: #333;
               background: url(../images/icon_14.png) no-repeat left center;
               padding-left: 22px;
-              .icon-fee{
+              .icon-fee {
                 width: 40px;
                 height: 18px;
                 line-height: 18px;
-                background: url('../images/sprites-pc.png') -189px -253px;
+                background: url("../images/sprites-pc.png") -189px -253px;
                 color: #ffffff;
                 padding-left: 6px;
                 box-sizing: border-box;
@@ -3226,11 +3216,11 @@ body{
     .fb {
       margin-top: 20px;
       @extend %clearfix;
-      .icon{
+      .icon {
         margin-right: 0;
         width: 20px;
         height: 20px;
-        background: url('../images/sprites-pc.png') -405px -98px;
+        background: url("../images/sprites-pc.png") -405px -98px;
       }
       .l {
         width: 430px;
@@ -3265,7 +3255,7 @@ body{
           li {
             @extend %point-a;
             margin-bottom: 6px;
-            &:last-child{
+            &:last-child {
               margin-bottom: 0;
             }
             a {
@@ -3318,17 +3308,9 @@ body{
               font-size: 14px;
               color: #fff;
               text-align: center;
-              background-image: linear-gradient(135deg, 
-                #23cee2 0%, 
-                #237ce2 100%), 
-              linear-gradient(
-                #ef544c, 
-                #ef544c);
-              background-blend-mode: normal, 
-                normal;
-              box-shadow: 0px 3px 5px 0px 
-                rgba(35, 124, 226, 0.4);
-              
+              background-image: linear-gradient(135deg, #23cee2 0%, #237ce2 100%), linear-gradient(#ef544c, #ef544c);
+              background-blend-mode: normal, normal;
+              box-shadow: 0px 3px 5px 0px rgba(35, 124, 226, 0.4);
             }
           }
         }
@@ -3460,7 +3442,7 @@ body{
     }
   }
 }
-.box3 {
+.ns-box3 {
   padding-top: 30px;
   padding-bottom: 30px;
   .t {
@@ -3501,11 +3483,11 @@ body{
       float: right;
       margin: 10px;
       cursor: pointer;
-      background: url('../images/sprites-pc.png') -446px -213px;
+      background: url("../images/sprites-pc.png") -446px -213px;
       width: 9px;
       height: 5px;
       &.active {
-        background: url('../images/sprites-pc.png') -446px -188px;
+        background: url("../images/sprites-pc.png") -446px -188px;
       }
       img {
         vertical-align: middle;
@@ -3613,7 +3595,7 @@ body{
         font-size: 14px;
         margin: 16px 0px;
         overflow: hidden;
-        
+
         a {
           color: #333;
           position: relative;
@@ -3644,7 +3626,7 @@ body{
     }
   }
 }
-.box4 {
+.ns-box4 {
   padding-top: 30px;
   .list {
     width: 365px;
@@ -3796,7 +3778,7 @@ body{
     }
   }
 }
-.box5 {
+.ns-box5 {
   border-top: 1px solid #e4e4e4;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -3807,7 +3789,6 @@ body{
     float: left;
     background: url(../images/icon_44.png) no-repeat left center;
     padding-left: 33px;
-    
   }
   .list {
     float: right;
@@ -3821,14 +3802,14 @@ body{
       cursor: pointer;
       margin-left: 4px;
       position: relative;
-      
+
       &.active {
         background-color: #237ce2;
-	      border-radius: 4px;
+        border-radius: 4px;
         color: #fff;
         font-weight: bold;
-        &::after{
-          content: '';
+        &::after {
+          content: "";
           position: absolute;
           bottom: -10px;
           left: 0;
@@ -3876,25 +3857,14 @@ body{
         margin-bottom: 20px;
         overflow: hidden;
         width: 28%;
+        @extend %point-a;
         a {
           font-size: 14px;
           color: #333;
-          position: relative;
-          float: left;
-          padding-left: 14px;
           width: 240px;
           @extend %one;
           &:hover {
             color: #237ce2;
-          }
-          &:after {
-            content: "";
-            position: absolute;
-            top: 8px;
-            left: 0;
-            width: 3px;
-            height: 3px;
-            background: #237ce2;
           }
         }
         span {
@@ -3918,25 +3888,14 @@ body{
           background: transparent;
           padding-left: 0;
           float: none;
+          @extend %in-b;
         }
         a {
           color: #333;
-          position: relative;
-          float: left;
-          padding-left: 14px;
-          width: 320px;
+          width: 100%;
           @extend %one;
           &:hover {
             color: #237ce2;
-          }
-          &:after {
-            content: "";
-            position: absolute;
-            top: 8px;
-            left: 0;
-            width: 3px;
-            height: 3px;
-            background: #237ce2;
           }
         }
         span {
@@ -3949,9 +3908,12 @@ body{
         li {
           background: url(../images/2.png) no-repeat center;
           width: 248px;
-          height: 150px;
           padding: 20px;
           box-sizing: border-box;
+          border: solid 1px #e4e4e4;
+          &::before{
+            display: none;
+          }
           h4 {
             font-size: 14px;
             font-weight: normal;
@@ -3976,24 +3938,24 @@ body{
           }
           span {
             float: left;
-            margin-top: 16px;
+            margin-top: 10px;
           }
         }
       }
     }
   }
 }
-.box6 {
+.ns-box6 {
   padding-top: 30px;
   h4 {
     font-size: 18px;
     font-weight: bold;
     display: block;
     line-height: 23px;
-    .icon{
+    .icon {
       width: 24px;
       height: 23px;
-      background: url('../images/sprites-pc.png') -10px -324px;
+      background: url("../images/sprites-pc.png") -10px -324px;
     }
   }
   ul {
@@ -4065,7 +4027,7 @@ body{
     }
   }
 }
-.box7 {
+.ns-box7 {
   padding-top: 30px;
   .t {
     .fl {
@@ -4171,7 +4133,7 @@ body{
     }
   }
 }
-.box8 {
+.ns-box8 {
   .title {
     @extend %clearfix;
     h4 {
@@ -4213,35 +4175,28 @@ body{
     font-size: 14px;
     li {
       margin-bottom: 20px;
-      overflow: hidden;
       width: 100%;
+      @extend %point-a;
       .list-txt {
         color: #333;
-        position: relative;
-        float: left;
-        padding-left: 14px;
-        // width: 274px;
         @extend %one;
         &:hover {
           color: #237ce2;
         }
-        &:after {
-          content: "";
-          position: absolute;
-          top: 8px;
-          left: 0;
-          width: 3px;
-          height: 3px;
-          background: #237ce2;
-        }
       }
       .intro {
-        // float: left;
         color: #237ce2;
         height: 18px;
         background: url(../images/icon_48.png) no-repeat left center;
         padding-left: 20px;
         margin-left: 18px;
+      }
+      .list-sp {
+        @extend %in-b;
+        color: #237ce2;
+        vertical-align: middle;
+        padding: 0 5px;
+        margin-left: 10px;
       }
       span {
         font-size: 14px;
@@ -4256,22 +4211,22 @@ body{
 .icon-jz {
   width: 16px;
   height: 16px;
-  background: url('../images/sprites-pc.png') -405px -321px;
+  background: url("../images/sprites-pc.png") -405px -321px;
 }
 .icon-kj {
   width: 16px;
   height: 16px;
-  background: url('../images/sprites-pc.png') -249px -253px;
+  background: url("../images/sprites-pc.png") -249px -253px;
 }
 .icon-zy {
   width: 15px;
   height: 18px;
-  background: url('../images/sprites-pc.png') -405px -175px;
+  background: url("../images/sprites-pc.png") -405px -175px;
 }
 .icon-gkk {
   width: 18px;
   height: 14px;
-  background: url('../images/sprites-pc.png') -302px -324px;
+  background: url("../images/sprites-pc.png") -302px -324px;
 }
 .icon_15 {
   width: 40px;
@@ -4281,31 +4236,43 @@ body{
 .icon-yt {
   width: 20px;
   height: 24px;
-  background: url('../images/sprites-pc.png') -405px -54px;
+  background: url("../images/sprites-pc.png") -405px -54px;
 }
 .icon-kd {
   width: 14px;
   height: 10px;
-  background: url('../images/sprites-pc.png') -144px -409px;
+  background: url("../images/sprites-pc.png") -144px -409px;
 }
-.icon_50 {
+.icon-zx {
   width: 15px;
   height: 16px;
-  background: url("../images/css_sprites.png") -375px -10px;
+  background: url("../images/sprites-pc.png") -321px -253px;
 }
 .icon-tm {
   width: 41px;
   height: 22px;
-  background: url('../images/sprites-pc.png') -128px -253px;
+  background: url("../images/sprites-pc.png") -128px -253px;
   color: $txt-color;
   padding-left: 5px;
   box-sizing: border-box;
 }
-.icon-pen{
+.icon-pen {
   width: 10px;
   height: 10px;
-  background: url('../images/sprites-pc.png') -446px -72px;
+  background: url("../images/sprites-pc.png") -446px -72px;
   margin-left: 10px;
+}
+.icon-star {
+  width: 13px;
+  height: 12px;
+  background: url("../images/sprites-pc.png") -226px -367px;
+  margin-right: 6px;
+}
+.icon-hide {
+  width: 15px;
+  height: 15px;
+  background: url('../images/sprites-pc.png') -87px -367px;
+  
 }
 ul.tx-pulic-ul {
   li {
@@ -4382,7 +4349,7 @@ ul.tx-pulic-ul {
 }
 ul.tk-list {
   li {
-    margin-bottom: 6px;
+    margin-bottom: 10px;
     line-height: 24px;
     &:last-child {
       margin-bottom: 0;
@@ -5161,7 +5128,6 @@ ul.tk-list {
           & > li {
             float: left;
             width: 248px;
-            height: 300px;
             padding: 20px;
             box-sizing: border-box;
             background-color: #ffffff;
@@ -5180,7 +5146,7 @@ ul.tk-list {
             .p2 {
               font-size: 14px;
               color: #888888;
-              margin: 20px 0 11px;
+              margin: 16px 0 10px;
             }
             .p3 {
               font-size: 0;
@@ -5224,7 +5190,7 @@ ul.tk-list {
               }
             }
             .mfst {
-              margin: 20px auto 0;
+              margin: 16px auto 0;
               display: block;
               width: 168px;
               height: 36px;
@@ -5255,7 +5221,7 @@ ul.tk-list {
               height: 24px;
               left: -51px;
               top: -3px;
-              background: url("../images/css_sprites.png") -10px -282px;
+              background: url("../images/sprites-pc.png") -356px -184px;
             }
           }
           ul {
@@ -5335,8 +5301,6 @@ ul.tk-list {
             }
             .star {
               float: right;
-              width: 94px;
-              height: 14px;
               margin-top: 26px;
             }
           }
@@ -5354,7 +5318,7 @@ ul.tk-list {
   }
 }
 .tx-module7 {
-  padding: 30px 0 50px;
+  padding: 10px 0 50px;
   .module7-left {
     float: left;
     width: 300px;
@@ -5378,8 +5342,8 @@ ul.tk-list {
           margin-right: 20px;
         }
         &.active {
-          .icon {
-            background: url("../images/css_sprites.png") -375px -46px;
+          .icon-hide{
+            background: url('../images/sprites-pc.png') -52px -367px;
           }
         }
       }

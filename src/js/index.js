@@ -15,8 +15,7 @@ $(function () {
   mouseenterTab(".box1-c2 .list li", ".box1-c2", ".qhlist", "active");
   mouseenterTab(".box5 .list li", ".qh", ".c", "active");
   mouseenterTab(".ns-footer-nav .tab-head li", ".ns-footer-nav", ".cont-item", "cur");
-  // 直播-列表页面 科目
-  mouseenterTab(".ns-live-list .list-km li", null, null, "cur");
+  
   
   // 功能完善的tab切换
   function tabHandle(headBox, parentBox, contBox, className){
@@ -27,6 +26,7 @@ $(function () {
     });
   }
   tabHandle('.zs-team .tab-head span', '.zs-team', '.cont-item', 'cur');
+  
 
   // 多选框
   function checkboxHandle(aimEle, className){
@@ -52,6 +52,8 @@ $(function () {
   }
   radioHandle('.l-radio li', 'cur');
   radioHandle('.detail-radio span', 'sel');
+  // 直播-列表页面 科目
+  radioHandle(".ns-live-list .list-km li", "cur");
 
   $(".jt").click(function () {
     $(this).toggleClass("active");
