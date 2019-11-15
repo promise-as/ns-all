@@ -5,14 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/base.css">
-  <script src="js/thea.debug.js"></script>
+  <link rel="stylesheet" href="https://img.thea.cn/public/css/base.css">
+  <script src="https://img.thea.cn/public/js/thea.debug.js"></script>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://img.thea.cn/public/qlppublic/swiper.min.css" />
 
   <script src="https://img.thea.cn/public/qlppublic/swiper.min.js"></script>
-  <script src="js/jquery-1.12.3.min.js"></script>
+  <script src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
   <title>类别首页</title>
+  <style>
+    html, body{
+      overflow-x: hidden;
+    }
+  </style>
 </head>
 
 <body>
@@ -164,7 +169,7 @@
     <div class="wrap">
       <div class="ns-head-l">
         <div class="ns-logo">
-          <img src="images/ns-logo.png" alt="环球网校">
+          <img src="images/lkz-logo.png" alt="">
         </div>
         <h2 class="ns-h1">一级建造师</h2>
       </div>
@@ -811,10 +816,10 @@
           <option value="大专">大专</option>
           <option value="本科">本科</option>
         </select>
-        <input type="text" placeholder="毕业专业" class="user-con"> 
-        <input type="text" placeholder="毕业年限" class="user-con"> 
-        <input type="text" placeholder="怎么称呼" class="user-name"> 
-        <input type="text" placeholder="联系方式" class="user-tel"> 
+        <input type="text" placeholder="毕业专业" class="user-con">
+        <input type="text" placeholder="毕业年限" class="user-con">
+        <input type="text" placeholder="怎么称呼" class="user-name">
+        <input type="text" placeholder="联系方式" class="user-tel">
         <input type="submit" value="提交审核">
       </form>
     </div>
@@ -1160,10 +1165,10 @@
       },
     })
     // 手机端水平轮播
-    if(document.body.clientWidth <= 1024){
+    if (document.body.clientWidth <= 1024) {
       swiper3.changeDirection().passedParams.direction = 'horizontal';
     }
-      
+
   </script>
   <script src="js/index.js"></script>
 </body>
