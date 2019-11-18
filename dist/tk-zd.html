@@ -265,15 +265,14 @@
         <li><span>D</span>. 经计量检定合格 </li>
         <li><span>E</span>. 具有申报正常工作条件的资格</li>
       </ul>
-      <form class="sign-in">
-        <input type="hidden" class="user-name">
-        <input type="hidden" class="user-tel">
-        <input type="hidden" class="user-con" id="answer">
-        <input type="submit" value="提交答案" id="submit">
-      </form>
+      <div class="zt-answer" id="answer">
+        <a href="javascript:;">提交答案</a>
+      </div>
       <div class="zt-parse">
         <div class="parse-sel">
-          <i class="icon"></i> 我选：<span class="error">A</span> 正确：<span class="answer">ABC</span>
+          <i class="icon"></i> 
+          我选：<span class="sel-an" id="selAnswer"></span> 
+          正确：<span class="answer" id=rightAnswer>ABC</span>
         </div>
         <div class="parse-txt">
           <span>解析：</span>
@@ -667,23 +666,25 @@
   </div>
 
   <!-- 答题弹窗 -->
-  <div class="ns-masklayer"></div>
-  <div class="ns-tc" id="answerPopup">
-    <i class="ns-tc-close"></i>
-    <div class="ns-tc-title">
-      <p class="tc-title1">每日一题，还要做题</span>
-        <p class="tc-title2">请<em>注册</em>会员吧</p>
+  <div class="ns-mask" id="answerPopup">
+    <div class="masklayer"></div>
+    <div class="mask-cont">
+      <i class="ns-close"></i>
+      <div class="ns-tc-title">
+        <p class="tc-title1">每日一题，还要做题</span>
+          <p class="tc-title2">请<em>注册</em>会员吧</p>
+      </div>
+      <form class='sign-in tc-form'>
+        <label for="tc-name">
+          <span>姓名：</span><input type="text" placeholder="请输入您的姓名" id='tc-name' class="user-name">
+        </label>
+        <label for="tc-tel">
+          <span>联系方式：</span><input type="text" placeholder="请输入您的姓名" id='tc-tel' class="user-tel">
+        </label>
+        <input type="submit" value="立即注册">
+        <div class="tc-hint">—— 注册表示同意《网站注册协议》 ——</div>
+      </form>
     </div>
-    <form class='sign-in tc-form'>
-      <label for="tc-name">
-        <span>姓名：</span><input type="text" placeholder="请输入您的姓名" id='tc-name' class="user-name">
-      </label>
-      <label for="tc-tel">
-        <span>联系方式：</span><input type="text" placeholder="请输入您的姓名" id='tc-tel' class="user-tel">
-      </label>
-      <input type="submit" value="立即注册">
-      <div class="tc-hint">—— 注册表示同意《网站注册协议》 ——</div>
-    </form>
   </div>
 
   <script src="js/index.js"></script>

@@ -2075,7 +2075,6 @@ body {
     padding: 30px 60px 40px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    
     .cont-title {
       font-size: 16px;
       line-height: 36px;
@@ -2105,10 +2104,11 @@ body {
         background: url(../images/zt-sel.png) no-repeat left;
       }
     }
-    .sign-in {
+    .zt-answer {
       @extend %clearfix;
       padding-top: 40px;
-      input[type="submit"] {
+      a {
+        @extend %in-b;
         float: right;
         width: 170px;
         height: 42px;
@@ -2120,6 +2120,7 @@ body {
         cursor: pointer;
         font-size: 16px;
         color: #ffffff;
+        text-align: center;
       }
     }
     .zt-parse {
@@ -2136,9 +2137,13 @@ body {
         .icon {
           width: 16px;
           height: 16px;
+          background: url("../images/nswap-right.png");
+          background-size: 100% 100%;
+        }
+        .icon-error{
           background: url("../images/sprites-pc.png") -230px -324px;
         }
-        .error {
+        .sel-an {
           color: #ef544c;
           margin-right: 30px;
         }
@@ -2643,94 +2648,103 @@ body {
   }
 }
 /* 答题弹窗 */
-.ns-tc {
-  width: 500px;
-  height: 399px;
-  padding: 16px 20px 20px;
-  box-sizing: border-box;
-  background: url(../images/ns-tc.png) no-repeat center;
+.ns-mask {
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  z-index: 20;
+  bottom: 0;
+  z-index: 30;
   display: none;
-  .ns-tc-close {
-    width: 14px;
-    height: 14px;
+  .masklayer {
     position: absolute;
-    top: 8px;
-    right: 8px;
-    cursor: pointer;
-    margin-right: 0;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
   }
-  .ns-tc-title {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 10px;
-    .tc-title1 {
-      font-size: 24px;
-    }
-    .tc-title2 {
-      font-size: 36px;
-      font-weight: bold;
-    }
-    em {
-      color: #fed101;
-      font-weight: bold;
-    }
-  }
-  .tc-form {
-    padding: 30px 30px 18px;
+  .mask-cont {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    padding: 16px 20px 20px;
     box-sizing: border-box;
-    background-color: #ffffff;
-    border-radius: 6px;
-    font-size: 16px;
-    label {
-      display: block;
-      height: 42px;
-      line-height: 42px;
-      margin-bottom: 20px;
-      span {
-        @extend %in-b;
-        width: 92px;
-        text-align: right;
-      }
-      input {
-        border: solid 1px #e4e4e4;
-        width: 300px;
-        height: 40px;
-      }
-    }
-    input[type="submit"] {
-      border: none;
-      @extend %in-b;
-      width: 399px;
-      height: 48px;
-      line-height: 48px;
-      background-image: linear-gradient(135deg, #23cee2 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2);
-      background-blend-mode: normal, normal;
-      box-shadow: 0px 3px 5px 0px rgba(35, 124, 226, 0.4);
-      border-radius: 24px;
-      margin-bottom: 20px;
-      color: #ffffff;
+    background: url(../images/ns-tc.png) no-repeat center;
+    .ns-close {
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: 8px;
+      right: 8px;
       cursor: pointer;
+      margin-right: 0;
     }
-    .tc-hint {
-      font-size: 14px;
-      line-height: 36px;
-      color: #c6c6c6;
+    .ns-tc-title {
       text-align: center;
+      color: #ffffff;
+      margin-bottom: 10px;
+      padding-left: 66px;
+      .tc-title1 {
+        font-size: 24px;
+      }
+      .tc-title2 {
+        font-size: 36px;
+        font-weight: bold;
+      }
+      em {
+        color: #fed101;
+        font-weight: bold;
+      }
+    }
+    .tc-form {
+      padding: 30px 30px 18px;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      border-radius: 6px;
+      font-size: 16px;
+      label {
+        display: block;
+        height: 42px;
+        line-height: 42px;
+        margin-bottom: 20px;
+        span {
+          @extend %in-b;
+          width: 92px;
+          text-align: right;
+        }
+        input {
+          border: solid 1px #e4e4e4;
+          box-sizing: border-box;
+          width: 300px;
+          height: 40px;
+        }
+      }
+      input[type="submit"] {
+        border: none;
+        @extend %in-b;
+        width: 399px;
+        height: 48px;
+        line-height: 48px;
+        background-image: linear-gradient(135deg, #23cee2 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2);
+        background-blend-mode: normal, normal;
+        box-shadow: 0px 3px 5px 0px rgba(35, 124, 226, 0.4);
+        border-radius: 24px;
+        margin-bottom: 20px;
+        color: #ffffff;
+        cursor: pointer;
+      }
+      .tc-hint {
+        font-size: 14px;
+        line-height: 36px;
+        color: #c6c6c6;
+        text-align: center;
+      }
     }
   }
-}
-.ns-masklayer{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 .icon-zt {
   width: 24px;
@@ -5829,7 +5843,6 @@ ul.tk-list {
               font-size: pr(24px);
               li {
                 padding-left: pr(32px);
-                background: url(../images/ns-zs-icon_1.png) no-repeat left;
                 margin-bottom: pr(10px);
                 .icon {
                   width: pr(16px);
@@ -5949,16 +5962,21 @@ ul.tk-list {
           display: flex;
           font-size: pr(24px);
           .row-col {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: none;
             width: pr(512px);
             line-height: pr(36px);
             padding: pr(20px) pr(16px);
             &:first-child {
+              display: flex;
               flex: 1;
               font-size: pr(24px);
             }
+            &::nth-of-type(2n+1){
+              display: flex;
+            }
+          }
+          .nswap-bk{
+            display: flex;
           }
           .font-red {
             color: #ef544c;
@@ -6095,9 +6113,7 @@ ul.tk-list {
               text-align: center;
             }
           }
-          .nswap-bk{
-            display: none;
-          }
+          
         }
         .flex-row {
           flex-direction: column;
@@ -6151,7 +6167,8 @@ ul.tk-list {
             }
             em{
               display: inline-block;
-              text-decoration:line-through
+              text-decoration:line-through;
+              color: #c6c6c6;
             }
           }
           .row-price {
@@ -6619,7 +6636,9 @@ ul.tk-list {
     padding-bottom: pr(20px);
     p{
       background-color: #fff;
-      padding-left: pr(24px);
+      padding: 0 pr(24px);
+      overflow-x: scroll;
+      white-space: nowrap;
     }
   }
   .ns-box2 {
@@ -9164,10 +9183,12 @@ ul.tk-list {
           .icon {
             width: pr(28px);
             height: pr(28px);
+          }
+          .icon-error{
             background: url("../images/icon_55.png") no-repeat;
             background-size: 100% 100%;
           }
-          .error {
+          .sel-an {
             margin-right: pr(30px);
           }
         }
@@ -9538,83 +9559,57 @@ ul.tk-list {
     border-radius: pr(31px);
     margin: 0 auto pr(20px);
   }
-  .ns-tc {
-    width: pr(600px);
-    height: pr(519px);
-    padding: pr(28px) pr(20px) pr(20px);
-    box-sizing: border-box;
-    background: url(../images/nswap-tc.png) no-repeat;
-    background-size: 100% 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    z-index: 20;
-    // display: none;
-    .ns-tc-close {
-      width: pr(24px);
-      height: pr(24px);
-      top: pr(20px);
-      right: pr(20px);
-    }
-    .ns-tc-title {
-      text-align: center;
-      color: #ffffff;
-      margin-bottom: pr(26px);
-      .tc-title1 {
-        font-size: pr(29px);
+  .ns-mask {
+    .mask-cont {
+      padding: pr(16px) pr(20px) pr(20px);
+      background-size: 100% 100%;
+      .ns-close {
+        width: pr(24px);
+        height: pr(24px);
+        top: pr(10px);
+        right: pr(10px);
       }
-      .tc-title2 {
-        font-size: pr(44px);
-        font-weight: bold;
-      }
-      em {
-        color: #fed101;
-        font-weight: bold;
-      }
-    }
-    .tc-form {
-      padding: pr(30px) pr(30px) pr(18px);
-      box-sizing: border-box;
-      background-color: #ffffff;
-      border-radius: pr(6px);
-      font-size: pr(26px);
-      label {
-        display: block;
-        height: pr(62px);
-        line-height: pr(62px);
-        margin-bottom: pr(30px);
-        span {
-          width: pr(130px);
-          text-align: right;
+      .ns-tc-title {
+        margin-bottom: pr(10px);
+        padding-left: pr(66px);
+        .tc-title1 {
+          font-size: pr(24px);
         }
-        input {
-          border: solid 1px #e4e4e4;
-          width: pr(357px);
+        .tc-title2 {
+          font-size: pr(36px);
+        }
+      }
+      .tc-form {
+        width: pr(560px);
+        padding: pr(30px) pr(30px) pr(18px);
+        border-radius: pr(6px);
+        font-size: pr(26px);
+        label {
           height: pr(62px);
+          line-height: pr(62px);
+          margin-bottom: pr(20px);
+          span {
+            width: pr(140px);
+          }
+          input {
+            width: pr(357px);
+            height: pr(62px);
+            line-height: pr(62px);
+          }
         }
-      }
-      input[type="submit"] {
-        border: none;
-        width: 100%;
-        height: pr(64px);
-        line-height: pr(64px);
-        background-image: linear-gradient(135deg, #23cee2 0%, #237ce2 100%), linear-gradient(#237ce2, #237ce2);
-        background-blend-mode: normal, normal;
-        box-shadow: 0px pr(3px) pr(5px) 0px rgba(35, 124, 226, 0.4);
-        border-radius: pr(32px);
-        margin-bottom: pr(20px);
-        color: #ffffff;
-        cursor: pointer;
-        font-size: pr(28px);
-      }
-      .tc-hint {
-        font-size: pr(14px);
-        line-height: pr(36px);
-        color: #c6c6c6;
-        text-align: center;
+        input[type="submit"] {
+          width: 100%;
+          height: pr(48px);
+          line-height: pr(48px);
+          box-shadow: 0px pr(3px) pr(5px) 0px rgba(35, 124, 226, 0.4);
+          border-radius: pr(24px);
+          margin-bottom: pr(20px);
+          font-size: pr(28px);
+        }
+        .tc-hint {
+          font-size: pr(26px);
+          line-height: pr(36px);
+        }
       }
     }
   }

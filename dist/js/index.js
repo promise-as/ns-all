@@ -117,17 +117,41 @@ $(function () {
   // });
 
   // 答题之后显示答案
-  $('#submit').click(function () {
-    $('.parse-sel').show();
+  $('#answer').click(function () {
+    if (!$(".zt-cont ul li.sel span").text()) {
+      alert("您还没选择答案，请选择答案？");
+      return null;
+    }
+    $("#selAnswer").text($(".zt-cont ul li.sel span").text());
+    // 判断提交答案是否正确
+    if ($(".zt-cont ul li.sel span").text() != $("#rightAnswer").text()) {
+      $(".parse-sel .icon").addClass('icon-error');
+    }
+    $('.zt-parse').show();
   });
 
-  // 关闭答题弹窗
-  $('#tj').click(function () {
+  // 关闭答题弹窗 只执行一次
+  $("#tj").one("click", function () {
     $("#answerPopup").show();
   });
-  $('.ns-tc-close').click(function () {
+  $('.ns-close').click(function () {
     $("#answerPopup").hide();
   });
+
+  // 招生页面的辅导方案切换
+  function tabfd(aimEle, contEle, className, className2) {
+    $(aimEle).each(function (aimIndex) {
+      $(this).click(function () {
+        $(this).addClass(className).siblings().removeClass('cur');
+        $($(contEle)[aimIndex]).addClass(className2).siblings().removeClass(className2);
+        $($(contEle)[aimIndex + 3]).addClass(className2).siblings().removeClass(className2);
+        $($(contEle)[aimIndex + 7]).addClass(className2).siblings().removeClass(className2);
+        $($(contEle)[aimIndex + 9]).addClass(className2).siblings().removeClass(className2);
+        $($(contEle)[aimIndex + 13]).addClass(className2).siblings().removeClass(className2);
+      });
+    });
+  }
+  tabfd('.zs-fd .fd-head .head-item', '.zs-fd .cont-row .row-col', 'cur', 'nswap-bk');
 });
 /* 搜索框 */
 function CheckForm() {
