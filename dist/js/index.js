@@ -15,7 +15,7 @@ $(function () {
   mouseenterTab(".box1-t .list li", ".qh", ".ul", "active");
   // 精选考点
   mouseenterTab(".box1-c2 .list li", ".box1-c2", ".qhlist", "active");
-  mouseenterTab(".box5 .list li", ".qh", ".c", "active");
+  mouseenterTab(".ns-box5 .list li", ".qh", ".c", "active");
   mouseenterTab(".ns-footer-nav .tab-head li", ".ns-footer-nav", ".cont-item", "cur");
 
   // 功能完善的tab切换
@@ -86,7 +86,7 @@ $(function () {
 
   /* 文章折叠 */
   function clickFold() {
-    $(".foldbox").eq(0).find("ul").hide();
+    // $(".foldbox").eq(0).find("ul").hide();
     $(".foldbox").eq(0).find(".tag-title").addClass("active");
     $(".foldbox").each(function () {
       $(this).find(".tag-title").click(function () {
@@ -107,14 +107,14 @@ $(function () {
   }
 
   // 搜索框失去焦点
-  // $('#text_one').focus(function(){
-  //   $('#nsHot').show();
-  // });
+  $('#text_one').focus(function () {
+    $('#nsHot').show();
+  });
   // 热门搜索推荐
-  // $('#nsHot li a').click(function(){
-  //   $('#text_one').val($(this).text());
-  //   $(this).parents('#nsHot').hide();
-  // });
+  $('#nsHot li a').click(function () {
+    $('#text_one').val($(this).text());
+    $(this).parents('#nsHot').hide();
+  });
 
   // 答题之后显示答案
   $('#answer').click(function () {

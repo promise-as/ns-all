@@ -446,6 +446,7 @@ body {
 }
 .ns-newbie {
   height: 80px;
+  margin-bottom: 20px;
   a {
     display: block;
     width: 146px;
@@ -1791,7 +1792,6 @@ body {
   float: left;
   margin-right: 50px;
   margin-bottom: 30px;
-  padding-top: 30px;
 }
 .ns-zd-kd {
   border-bottom: 1px solid #e4e4e4;
@@ -1806,18 +1806,18 @@ body {
       color: #333333;
       vertical-align: middle;
       margin-bottom: 20px;
+      h1{
+        @extend %in-b;
+      }
       .explain {
+        font-size: 14px;
         color: #237ce2;
         border: 1px solid #237ce2;
         padding: 0 5px;
         margin-left: 10px;
         vertical-align: middle;
-        .icon {
-          @extend %in-b;
-          width: 12px;
-          height: 11px;
-          background: url("../images/css_sprites.png") -10px -362px;
-          margin-right: 6px;
+        .icon-sp{
+          margin-left: 0;
         }
       }
     }
@@ -1836,7 +1836,7 @@ body {
   font-size: 16px;
   line-height: 32px;
   color: #444444;
-  padding: 30px 0;
+  padding-bottom: 30px;
   p {
     margin-bottom: 20px;
   }
@@ -1861,7 +1861,6 @@ body {
   }
   .txt-jxb {
     height: 80px;
-    background: url(../images/kd-zd_3.png) no-repeat;
   }
 }
 .ns-zd-page {
@@ -1878,7 +1877,6 @@ body {
 .ns-r {
   width: 300px;
   float: left;
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 /* 直播首页 */
@@ -1937,6 +1935,7 @@ body {
     font-size: 14px;
     line-height: 26px;
     @extend %in-b;
+    margin-bottom: 20px;
     .km-key {
       float: left;
       background-color: #237ce2;
@@ -2568,8 +2567,10 @@ body {
         color: #333;
         @extend %clearfix;
         a {
+          @extend %in-b;
           width: 165px;
           @extend %one;
+          vertical-align: middle;
         }
       }
       p {
@@ -2893,7 +2894,9 @@ body {
                 display: block;
                 width: 48px;
                 height: 48px;
-                border-radius: 50%;
+                img{
+                  border-radius: 50%;
+                }
               }
               p {
                 margin-top: 6px;
@@ -2984,7 +2987,7 @@ body {
           li {
             width: 28%;
             a {
-              width: 240px;
+              width: 220px;
             }
           }
         }
@@ -3003,6 +3006,7 @@ body {
               a {
                 @extend %in-b;
                 width: 100%;
+                @extend %one;
                 &::after {
                   display: none;
                 }
@@ -3171,6 +3175,12 @@ body {
               color: #333;
               background: url(../images/icon_14.png) no-repeat left center;
               padding-left: 22px;
+              span{
+                @extend %in-b;
+                width: 170px;
+                @extend %one;
+                vertical-align: middle;
+              }
               .icon-fee {
                 width: 40px;
                 height: 18px;
@@ -3286,8 +3296,11 @@ body {
               margin-bottom: 0;
             }
             a {
+              @extend %in-b;
               width: 233px;
+              @extend %one;
               margin-right: 10px;
+              vertical-align: middle;
             }
           }
         }
@@ -3518,7 +3531,6 @@ body {
       position: absolute;
       top: 30px;
       right: 10px;
-      width: 868px;
       padding: 15px 20px;
       .sj {
         background: url(../images/10.png) no-repeat center;
@@ -3556,6 +3568,7 @@ body {
         width: 28%;
         @extend %point-a;
         a {
+          @extend %in-b;
           color: #333;
           width: 240px;
           @extend %one;
@@ -3841,9 +3854,11 @@ body {
     ul {
       @extend %align;
       margin-top: 20px;
+      justify-content: flex-start;
       li {
         float: left;
         font-size: 14px;
+        margin-right: 20px;
         a {
           &:hover {
             color: #237ce2;
@@ -3865,10 +3880,12 @@ body {
         width: 28%;
         @extend %point-a;
         a {
+          @extend %in-b;
           font-size: 14px;
           color: #333;
           width: 240px;
           @extend %one;
+          vertical-align: middle;
           &:hover {
             color: #237ce2;
           }
@@ -3877,6 +3894,7 @@ body {
           font-size: 14px;
           color: #9999;
           float: right;
+          vertical-align: middle;
         }
       }
     }
@@ -3952,7 +3970,6 @@ body {
   }
 }
 .ns-box6 {
-  padding-top: 30px;
   h4 {
     font-size: 18px;
     font-weight: bold;
@@ -3975,21 +3992,22 @@ body {
       box-sizing: border-box;
       .l {
         float: left;
+        margin-right: 20px;
         span {
           width: 64px;
           height: 64px;
-          border-radius: 50%;
           display: inline-block;
           vertical-align: middle;
           img {
             width: 100%;
             height: 100%;
+            border-radius: 50%;
           }
         }
       }
       .r {
         font-size: 14px;
-        float: right;
+        float: left;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -4008,6 +4026,7 @@ body {
         }
         .r-title{
           width: 350px;
+          @extend %one;
           font-size: 16px;
         }
         a {
@@ -4064,6 +4083,12 @@ body {
         color: #fff;
         border-radius: 14px 14px 14px 0px;
         display: inline-block;
+        a{
+          color: #fff;
+          &:hover{
+            color: $txt-color;
+          }
+        }
       }
     }
     .fr {
@@ -4167,9 +4192,15 @@ body {
       background-image: linear-gradient(135deg, #f6c51c 0%, #ef544c 100%), linear-gradient(#237ce2, #237ce2);
       background-blend-mode: normal, normal;
       box-shadow: 0px 3px 5px 0px rgba(239, 84, 76, 0.4);
-      color: #fff;
+      
       border-radius: 14px 14px 14px 0px;
       display: inline-block;
+      a{
+        color: #fff;
+        &:hover{
+          color: $txt-color;
+        }
+      }
     }
   }
   .list {
@@ -4291,7 +4322,6 @@ ul.tx-pulic-ul {
       span {
         font-size: 16px;
         color: #333333;
-        margin-left: 10px;
         display: inline-block;
         vertical-align: middle;
       }
@@ -4374,7 +4404,8 @@ ul.tk-list {
         font-size: 14px;
         color: #333333;
         display: inline-block;
-        width: 350px;
+        width: 330px;
+        margin-right: 20px;
         @extend %one;
         &:hover {
           color: #237ce2;
@@ -4806,6 +4837,12 @@ ul.tk-list {
       }
       .dn-text {
         float: left;
+        width: 224px;
+        li{
+          font-size: 14px;
+          line-height: 30px;
+          color: #666666;
+        }
         p {
           margin-bottom: 12px;
           font-size: 14px;
@@ -4846,7 +4883,7 @@ ul.tk-list {
         }
         a {
           @extend %in-b;
-          max-width: 210px;
+          max-width: 206px;
           @extend %one;
           font-size: 14px;
           color: #333333;
@@ -4922,6 +4959,10 @@ ul.tk-list {
         }
         .number {
           margin-top: 20px;
+          @extend %one;
+          .icon-sp{
+            margin-left: 0;
+          }
           span {
             vertical-align: middle;
             font-size: 14px;
@@ -4955,6 +4996,14 @@ ul.tk-list {
     float: left;
     .m-title {
       position: relative;
+      h1 {
+        position: relative;
+        font-size: 16px;
+        color: #333333;
+        font-weight: bold;
+        z-index: 2;
+        line-height: 36px;
+      }
       h3 {
         position: relative;
         font-size: 16px;
@@ -5339,20 +5388,24 @@ ul.tk-list {
           font-weight: bold;
           vertical-align: middle;
         }
-        .icon {
-          width: 15px;
-          height: 15px;
-          background: url("../images/css_sprites.png") -375px -81px;
-          margin-right: 20px;
-        }
         &.active {
+          span{
+            a{
+              color: $txt-color;
+            }
+            
+          }
           .icon-hide {
             background: url("../images/sprites-pc.png") -52px -367px;
+          }
+          + ul{
+            display: block;
           }
         }
       }
       ul {
         padding-left: 28px;
+        display: none;
         li {
           margin-top: 16px;
           position: relative;
@@ -8029,6 +8082,11 @@ ul.tk-list {
       }
       span {
         display: none;
+        a{
+          &:hover{
+            color: #fff;
+          }
+        }
       }
     }
     .list {
@@ -8449,7 +8507,6 @@ ul.tk-list {
     }
     .txt-jxb {
       height: pr(80px);
-      background: url('../images/nswap-kd_3.png') no-repeat;
       background-size: 100% 100%;
     }
   }
