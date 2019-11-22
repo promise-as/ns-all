@@ -449,11 +449,8 @@ body {
   margin-bottom: 20px;
   a {
     display: block;
-    width: 146px;
-    height: 42px;
-    float: right;
-    margin-right: 12px;
-    margin-top: 20px;
+    width: 100%;
+    height: 100%;
   }
 }
 .ns-ad {
@@ -655,7 +652,9 @@ body {
   padding-bottom: 60px;
   .zs-head {
     height: 481px;
-    background: url(../images/ns-zs-bg_1.png) no-repeat top;
+  }
+  .zswap-head{
+    display: none;
   }
   .zs-video {
     background-color: #ffffff;
@@ -2407,6 +2406,7 @@ body {
 }
 .ns-zd-gift {
   display: block;
+  font-size: 16px;
   width: 664px;
   height: 60px;
   line-height: 60px;
@@ -2834,12 +2834,18 @@ body {
       }
     }
   }
+  .box1-cont{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
   .box1-c {
     .ul {
       @extend %align;
-      display: none;
+      display: flex;
       &.active {
-        display: flex;
+        // display: flex;
       }
       > li {
         width: 248px;
@@ -2876,8 +2882,7 @@ body {
           p {
             color: #888888;
             display: inline-block;
-            vertical-align: middle;
-            &.p1 {
+             &.p1 {
               padding-right: 10px;
             }
           }
@@ -2895,6 +2900,8 @@ body {
                 width: 48px;
                 height: 48px;
                 img{
+                  width: 100%;
+                  height: 100%;
                   border-radius: 50%;
                 }
               }
@@ -2961,11 +2968,15 @@ body {
         display: none;
         &.active {
           display: flex;
+          justify-content: flex-start;
         }
         li {
           margin-bottom: 20px;
           overflow: hidden;
-          width: 44%;
+          width: 45%;
+          &:nth-of-type(odd){
+            margin-right: 6%;
+          }
           > a {
             color: #333;
             float: left;
@@ -2986,18 +2997,21 @@ body {
         &.ul2 {
           li {
             width: 28%;
+            margin-right: 5%;
             a {
               width: 220px;
             }
           }
         }
         &.ul3 {
+          margin-right: -36px;
           li {
             background: url(../images/icon_18.png) no-repeat right bottom;
             width: 248px;
             padding: 20px;
             box-sizing: border-box;
             border: solid 1px #e4e4e4;
+            margin-right: 36px;
             h4 {
               @extend %in-b;
               font-size: 14px;
@@ -3904,10 +3918,13 @@ body {
       font-size: 14px;
       margin-top: 30px;
       @extend %align;
+      justify-content: flex-start;
+      margin-right: -36px;
       li {
         margin-bottom: 20px;
         overflow: hidden;
         width: 44%;
+        margin-right: 36px;
         h4 {
           background: transparent;
           padding-left: 0;
@@ -4013,10 +4030,11 @@ body {
         align-items: center;
         height: 60px;
         p {
+          @extend %in-b;
+          width: 216px;
+          @extend %one;
           color: #666666;
-          display: inline-block;
           padding-left: 18px;
-          margin-right: 30px;
           &.p1 {
             background: url(../images/17.png) no-repeat left center;
           }
@@ -4025,7 +4043,7 @@ body {
           }
         }
         .r-title{
-          width: 350px;
+          width: 320px;
           @extend %one;
           font-size: 16px;
         }
@@ -4307,7 +4325,7 @@ body {
 .icon-hide {
   width: 15px;
   height: 15px;
-  background: url("../images/sprites-pc.png") -87px -367px;
+  background: url("../images/sprites-pc.png") -52px -367px;
 }
 ul.tx-pulic-ul {
   li {
@@ -4821,6 +4839,7 @@ ul.tk-list {
         border-radius: 6px 0px 6px 6px;
         float: left;
         margin-right: 13px;
+        margin-top: 6px;
       }
       .tm-icon {
         background-color: #237ce2;
@@ -4967,6 +4986,14 @@ ul.tk-list {
             vertical-align: middle;
             font-size: 14px;
             color: #333333;
+          }
+          a {
+            vertical-align: middle;
+            font-size: 14px;
+            color: #333333;
+            &:hover{
+              color: $txt-color;
+            }
           }
         }
         a.teacher-home {
@@ -5231,8 +5258,9 @@ ul.tk-list {
                   width: 48px;
                   height: 48px;
                   img {
-                    width: 48px;
-                    height: 48px;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
                   }
                 }
                 p {
@@ -5382,21 +5410,18 @@ ul.tk-list {
       margin-top: 20px;
       cursor: pointer;
       .tag-title {
-        span {
+        a {
           font-size: 16px;
           color: #333333;
           font-weight: bold;
           vertical-align: middle;
         }
         &.active {
-          span{
-            a{
-              color: $txt-color;
-            }
-            
+          a{
+            color: $txt-color;
           }
           .icon-hide {
-            background: url("../images/sprites-pc.png") -52px -367px;
+            background: url("../images/sprites-pc.png") -87px -367px;
           }
           + ul{
             display: block;
@@ -5410,6 +5435,15 @@ ul.tk-list {
           margin-top: 16px;
           position: relative;
           padding-left: 10px;
+          a {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.4;
+            &:hover{
+              color: #237ce2;
+              text-decoration: underline;
+            }
+          }
           &::before {
             position: absolute;
             top: 7px;
@@ -5420,15 +5454,9 @@ ul.tk-list {
             height: 3px;
             background-color: #237ce2;
           }
-          a {
-            font-size: 14px;
-            color: #666666;
-            line-height: 1.4;
-          }
-          &:hover {
-            a {
+          &.active{
+            a{
               color: #237ce2;
-              text-decoration: underline;
             }
           }
         }
@@ -5785,9 +5813,12 @@ ul.tk-list {
   }
   .ns-zs {
     padding-bottom: 0;
-    .zs-head {
+    .zs-head{
+      display: none;
+    }
+    .zswap-head {
+      display: block;
       height: pr(480px);
-      background: url(../images/nswap-bg_1.png) no-repeat top;
       background-size: 100% 100%;
     }
     .zs-video {
@@ -7518,6 +7549,9 @@ ul.tk-list {
         background-size: 100% 100%;
       }
     }
+    .ns-live-title{
+      padding: 0 0 pr(30px);
+    }
     ul {
       margin-top: 0;
       background-color: #fff;
@@ -7531,6 +7565,7 @@ ul.tk-list {
         padding: pr(30px);
         .l {
           float: left;
+          margin-right: pr(20px);
           span {
             width: 64px;
             height: 64px;
@@ -7544,13 +7579,13 @@ ul.tk-list {
           }
         }
         .r {
-          width: pr(500px);
+          width: pr(480px);
           font-size: 14px;
           float: right;
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
-          height: 60px;
+          height: pr(260px);
           p {
             color: #666666;
             display: inline-block;
@@ -7644,9 +7679,8 @@ ul.tk-list {
           border-left: 1px solid #cae2ff;
           li {
             .tx-title {
-              padding-left: pr(22px);
               &::before {
-                left: pr(-12px);
+                left: pr(-36px);
                 top: pr(10px);
               }
               span {
@@ -7658,7 +7692,7 @@ ul.tk-list {
             }
             .gray-text {
               margin-top: pr(20px);
-              padding-left: pr(60px);
+              padding-left: pr(30px);
               font-size: pr(24px);
               span {
                 font-size: pr(24px);
@@ -7836,9 +7870,12 @@ ul.tk-list {
           .t {
             white-space: pre-wrap;
             font-size: pr(26px);
+            min-height: pr(67px);
           }
           .span {
             margin: pr(20px) 0 pr(10px);
+            overflow-x: scroll;
+            white-space: nowrap;
             span {
               font-size: pr(24px);
               line-height: pr(32px);
@@ -7925,7 +7962,7 @@ ul.tk-list {
         float: none;
         .text {
           font-size: pr(26px);
-          width: auto;
+          width: 80%;
           &:hover {
             color: #237ce2;
           }
@@ -7970,7 +8007,7 @@ ul.tk-list {
     background-color: #eee;
     .t {
       background-color: #fff;
-      padding: pr(24px);
+      padding: pr(24px) pr(10px) pr(24px) pr(24px);
       @extend %clearclass;
       @extend .space-between;
       .fl {
@@ -7992,13 +8029,14 @@ ul.tk-list {
       }
       .fr {
         float: none;
+        width: 40%;
         font-size: pr(22px);
         margin-top: pr(10px);
         span {
           color: #666666;
         }
         ul {
-          width: 80%;
+          width: 50%;
           overflow-x: scroll;
           white-space: nowrap;
           li {
@@ -8104,6 +8142,7 @@ ul.tk-list {
           display: inline-block;
           width: 70%;
           @extend %one-wap;
+          vertical-align: middle;
         }
         .list-txt {
           color: #333;
@@ -8698,6 +8737,11 @@ ul.tk-list {
               font-size: pr(24px);
               color: #333333;
             }
+            a {
+              vertical-align: middle;
+              font-size: pr(24px);
+              color: #333333;
+            }
           }
           a.teacher-home {
             float: left;
@@ -9128,7 +9172,10 @@ ul.tk-list {
         &.cur{
           border: none;
           background-color: #237ce2;
-          color: #fff;
+          
+          a{
+            color: #fff;
+          }
           .icon{
             background: url(../images/nswap-hide.png) no-repeat;
             background-size: 100% 100%;

@@ -10,7 +10,7 @@ $(function () {
     });
   }
   // 建筑类考试
-  mouseenterTab(".box1-t .list li", ".qh", ".ul", "active");
+  mouseenterTab(".box1-t .list li", ".qh", ".box1-cont", "active");
   // 精选考点
   mouseenterTab(".box1-c2 .list li", ".box1-c2", ".qhlist", "active");
   mouseenterTab(".ns-box5 .list li", ".qh", ".c", "active");
@@ -88,15 +88,22 @@ $(function () {
   /* 文章折叠 */
   function clickFold() {
     // $(".foldbox").eq(0).find("ul").hide();
-    $(".foldbox").eq(0).find(".tag-title").addClass("active")
+    // $(".foldbox").eq(0).find(".tag-title").addClass("active")
     $(".foldbox").each(function () {
       $(this).find(".tag-title").click(function () {
-        $(this).toggleClass("active");
         $(this).parents(".foldbox").find("ul").slideToggle();
+        $(this).toggleClass("active");
       })
     })
   }
   clickFold();
+
+  function addColor(){
+    $(".foldbox ul li").click(function(){
+      $(this).addClass('active');
+    });
+  }
+  addColor();
 
   /* SuperSlide */
   if ($(".teacher-slide").length) { // 过滤没有SuperSlide页面

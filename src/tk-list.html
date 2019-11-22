@@ -299,11 +299,9 @@
   <div class="tx-module7 wrap clearfix">
     <div class="module7-left clearfix">
       <div class="module7-box foldbox">
-        <div class="tag-title active">
+        <div class="tag-title">
           <i class="icon-hide"></i>
-          <span>
-            <a href="" target="_blank"></a> 建设工程施工管理
-          </span>
+          <a href="">建设工程施工管理</a> 
         </div>
         <ul>
           <li><a href="#">第一章 施工管理</a></li>
@@ -317,7 +315,8 @@
       </div>
       <div class="module7-box foldbox">
         <div class="tag-title">
-          <i class="icon-hide"></i><span>建设工程施工管理</span>
+          <i class="icon-hide"></i>
+          <a href="">建设工程施工管理</a>
         </div>
         <ul>
           <li><a href="#">第一章 施工管理</a></li>
@@ -331,7 +330,8 @@
       </div>
       <div class="module7-box foldbox">
         <div class="tag-title">
-          <i class="icon-hide"></i><span>建设工程施工管理</span>
+          <i class="icon-hide"></i>
+          <a href="">建设工程施工管理</a>
         </div>
         <ul>
           <li><a href="#">第一章 建设工程基本法律知识</a></li>
@@ -785,7 +785,11 @@
     </div>
   </div>
 
-  <script src="js/index.js"></script>
+  <script type="text/javascript">
+    $(".foldbox").eq(0).find(".tag-title").addClass("active");
+  </script>
+  <script type="text/javascript" src="js/index.js"></script>
+  
 </body>
 
 </html>
